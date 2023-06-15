@@ -71,7 +71,7 @@ const LoginModal = () => {
     )
   return (
     <div>
-        <Modal footerElement={footerElement} bodyElement={bodyElement} isOpen={loginModal} onSubmit={handleSubmit(onSubmit)} onClose={() => {dispatch(loginModalFunc())}} btnLabel='Create' title='Create Listing'/>
+        <Modal footerElement={footerElement} bodyElement={bodyElement} isOpen={loginModal} onSubmit={handleSubmit(onSubmit)} onClose={() => {dispatch(loginModalFunc())}} btnLabel='Login' title='Login'/>
     </div>
   )
 }

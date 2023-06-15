@@ -18,13 +18,14 @@ const UserMenu = ({user} : {user: User | any | undefined}) => {
     <div onClick={() => setOpenMenu(!openMenu)} className='relative flex items-center gap-2 cursor-pointer'>
         <div className='text-gray-500 text-sm'>{user?.name}</div>
         <GiHamburgerMenu size={25}/>
-        {/* <Image
-         src={user ? user.image :   "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"}
+        <Image
+         src={ user?.image ? user.image:   "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"}
          alt=''
-         width={40} 
+         width={40}     
          height={40}
+         unoptimized
          className='rounded-full'
-        />    */}
+        />     
         {
             openMenu && (
                 <div className='absolute bg-white shadow-lg shadow-gray-500 w-[150px] top-16 right-0'>
